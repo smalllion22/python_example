@@ -6,6 +6,18 @@
 # 使用者猜對要回傳「恭喜中獎」
 
 
+while True:
+    guess= int(input("請在1~100輸入數字："))
+    ans=73
+    if guess>100 or guess<1:
+        print("超出範圍請重新輸入")
+    elif guess>ans:
+        print("請輸入更小的數字")
+    elif guess<ans:
+        print("請輸入更大的數字")
+    else: 
+        print("恭喜中獎")
+        break
 
 
 
